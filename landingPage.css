@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background-color: #fefefe;
+    background-color: #f5f4f3;
 }
 
 nav .left img {
@@ -30,7 +30,8 @@ nav {
     position: relative;
     margin: 0 auto;
     border: 1px solid black;
-    box-shadow: 10px 5px 10px 2px black;
+    box-shadow: 10px 3px 10px 3px black;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6); */
   }
   
   .carousel-inner {
