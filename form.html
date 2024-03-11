@@ -11,7 +11,7 @@
  <div class="container">
       <h1>Formulir Pendaftaran</h1>
 
-      <form action="index.html">
+      <form action="#">
         <label for="fname">Nama:</label><br>
         <input type="text" id="fname" placeholder="masukan nama" ><br>
         <label for="lname">Email:</label><br>
@@ -36,19 +36,18 @@
         <input type="text" id="Hobi" placeholder="Hobi"><br><br>
   
         <label for="Alamat">Alamat</label><br>
-        <input type="text" id="Alamat" placeholder="Alamat"><br><br>
+        <!-- <input type="text" id="Alamat" placeholder="Alamat"><br><br> -->
+        <textarea id="description" name="description" rows="5" cols="50">
+          </textarea>
 
         <form action="/upload" method="post" enctype="multipart/form-data">
-          <label for="file">Choose a file:</label><br>
+        <br>
+        <br><label for="file">Choose a file:</label><br>
           <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .gif">
           <br><br>
-          <input type="submit" value="Upload"> <input type="submit" value="Submit">
+          <input type="submit" value="Submit">
         </form>
-        
-     
-
-
-        </form> 
+      </form> 
 
 
   </div> 
