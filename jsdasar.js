@@ -249,11 +249,7 @@ function jsOperators() {
 
 // POP UP //
 
-function popUp() {
-  let string = confirm('Apakah kamu mau bekerja denganku?');
 
-  string ? alert('Jawaban Anda Mau') : alert('Jawaban anda tidak mau');
-}
 
 // * Alert
 // alert('Hallo Selamat Datang di Arkatama')
@@ -276,6 +272,12 @@ function ConfirmAlert(){
 
 // Percabangan //
 
+function percabangan() {
+  let string = confirm('Apakah kamu mau makan malam denganku?');
+
+  if (string) alert('Jawaban anda mau');
+}
+
 
 
 // * IF
@@ -286,6 +288,12 @@ function ConfirmAlert(){
 
 
 // Perulangan atau Loop//
+
+function Perulangan() {
+  let string = confirm('Apakah kamu mau bekerja denganku?');
+
+  string ? alert('Jawaban Anda Mau') : alert('Jawaban anda tidak mau');
+}
 // * For
 // * While
 // * Do..,While
