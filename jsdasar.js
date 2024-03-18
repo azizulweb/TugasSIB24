@@ -67,9 +67,9 @@ function AlertLet(){
 //const 
 function AlertConst(){
 
-  const fullName6= "azizul fichri"
-        fullName6 = "Joko"
-        alert(fullName6) // Output Joko
+  const fullName5 = 'azizul fichri'
+        fullName5 = 'Joko'
+        alert(fullName5) // Output Joko
 }
 
 
@@ -189,7 +189,7 @@ function  ConevertionAlert1(){
 // Java script Operator//
 
 
-function jsOperators() {
+function aritmatika() {
   let a = 3;
   let b = 5;
 
@@ -215,13 +215,16 @@ function jsOperators() {
 
 
 // * Comparation
-// let a = 3
-// let b = 5
+function comparison(ujian){
+  let a = 3
+  let b = 5
 
-// console.log(a == b);
-// console.log(a < b);
-// console.log(a > b);
-// console.log(a != b);
+  console.log(a == b);
+  console.log(a < b);
+  console.log(a > b);
+  console.log(a != b);
+}
+
 
 // * Logika
 // let a = 4
@@ -241,10 +244,14 @@ function jsOperators() {
 
 
 // * Ternary
-// let c = 90
-// let d = 90
+function ternary(){
+  let result;
+  let c = 95
+  let d = 90
 
-// console.log(c == d ? 'sama' : 'tidak sama');
+  alert(c < d ? 'selamat anda mendapatkan Nilai A' :  'selamat anda mendapatkan Nilai B' );
+  return result;
+}
 
 
 // POP UP //
