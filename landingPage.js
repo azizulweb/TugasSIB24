@@ -10,9 +10,11 @@ const carouselInner = document.querySelector('.carousel-inner');
         prevBtn.addEventListener('click', () => {
           currentIndex = (currentIndex === 0) ? 1 : currentIndex - 1;
           showSlide(currentIndex);
+          slides[currentSlide].style.opacity = '3';
         });
         
         nextBtn.addEventListener('click', () => {
           currentIndex = (currentIndex === 1 ) ? 0 : currentIndex + 1;
           showSlide(currentIndex);
+          slides[currentSlide].style.opacity = '3';
         });
