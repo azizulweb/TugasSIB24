@@ -1,25 +1,47 @@
 body{
     text-align: center;
-    background-color: #f5f4f3;
+    background-image: url(assets/bg-putih);
 }
 
-nav .left img {
-    width: 90px;
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(red, green, blue, alpha);
+  padding: 4px 20px;
 }
 
-nav .text .p {
-    /* align-content: center; */
-    text-align: center;
-    
+.logo img {
+  width: 80px; /* Sesuaikan dengan lebar logo */
+  height: auto; /* Tinggi disesuaikan secara otomatis */
+  border-radius: 50%;
+  /* margin-left: 1000px auto; */
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    min-height: 80 px;
-    align-items: center;
-    /* border-bottom: 1px  solid; */
-    padding: 0px 5% 0px 5%;    
+.nav-links {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px; /* Menambahkan padding untuk memberi tampilan tombol */
+  border-radius: 7px; /* Menggunakan border-radius untuk memberi tampilan sudut yang melengkung */
+  background-color: rgb(82, 79, 77); /* Warna latar belakang */
+  transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.nav-links li a:hover {
+  background-color: rgba(241, 241, 19, 0.918); /* Warna saat dihover */
 }
 
 

@@ -117,8 +117,29 @@ footer {
   text-align: center;
   padding: 20px
 }
+/* 
+@media (max-width: 768px) {
+  .carousel {
+    padding: 50px 20px;
+}
 
-@keyframes fade {
+.carousel h1 {
+    font-size: 24px;
+}
+
+.carousel p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 8px 16px;
+}
+
+}
+  */
+
+/* @keyframes fade {
   form{opacity: 0.3} 
   to {opacity: 1}
 }
@@ -151,4 +172,4 @@ footer {
       font-size: 11px;
       padding: 6px;    
   }
-}
+} */

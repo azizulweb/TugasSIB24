@@ -1,27 +1,33 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//   const carouselInner = document.querySelector('.carousel-inner');
-//   const prevBtn = document.querySelector('.carousel-prev');
-//   const nextBtn = document.querySelector('.carousel-next');
-//   let currentIndex = 0;
-//   const slideInterval = 5000;
+// // document.addEventListener("DOMContentLoaded", function() {
+// //   const carouselInner = document.querySelector('.carousel-inner');
+// //   const prevBtn = document.querySelector('.carousel-prev');
+// //   const nextBtn = document.querySelector('.carousel-next');
+// //   let currentIndex = 0;
+// //   const slideInterval = 5000;
   
-//   function showSlide(index) {
-//     carouselInner.style.transform = `translateX(-${index * 100}%)`;
-//   }
+// //   function showSlide(index) {
+// //     carouselInner.style.transform = `translateX(-${index * 100}%)`;
+// //   }
   
-//   prevBtn.addEventListener('click', () => {
-//     currentIndex = (currentIndex === 0) ? 3 : currentIndex - 1;
-//     showSlide(currentIndex);
-//   });
+// //   prevBtn.addEventListener('click', () => {
+// //     currentIndex = (currentIndex === 0) ? 3 : currentIndex - 1;
+// //     showSlide(currentIndex);
+// //   });
   
-//   nextBtn.addEventListener('click', () => {
-//     currentIndex = (currentIndex === 3 ) ? 0 : currentIndex + 1;
-//     showSlide(currentIndex);
-//   });
-// });
+// //   nextBtn.addEventListener('click', () => {
+// //     currentIndex = (currentIndex === 3 ) ? 0 : currentIndex + 1;
+// //     showSlide(currentIndex);
+// //   });
+// // });
 
 // script.js
-document.addEventListener('DOMContentLoaded', function() {
+// document.querySelector('.cta-button').addEventListener('click', function() {
+//   // Tangani tindakan saat tombol di klik
+//   // Misalnya: membuka formulir, menampilkan pesan, dll.
+// });
+
+document.addEventListener('DOMContentLoaded', function()
+ {
   let slides = document.querySelectorAll('.carousel-item');
   let currentSlide = 0;
 
