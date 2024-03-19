@@ -3,6 +3,8 @@ const carouselInner = document.querySelector('.carousel-inner');
         const nextBtn = document.querySelector('.carousel-next');
         let currentIndex = 0;
         
+
+        
         function showSlide(index) {
           carouselInner.style.transform = `translateX(-${index * 100}%)`;
         }
