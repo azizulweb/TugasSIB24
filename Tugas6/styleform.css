@@ -1,0 +1,18 @@
+body {
+    background-color: dodgerblue;
+}
+
+h1{
+    text-align: center;
+    border-bottom: rgba(0, 0, 0, 0.6)  solid;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;  
+    background-color: #d2e5f1;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.99);
+}
