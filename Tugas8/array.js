@@ -1,4 +1,4 @@
-const cardData = [
+const postData = [
     {
         name:'Strawberry Juice',
         price:'IDR 15.000',
@@ -47,7 +47,7 @@ const cardData = [
 
 const postContainer = document.querySelector('.container');
 const postMethods = () => {
-    cardData.map((postData)=>{
+    postData.map((postData)=>{
         console.log(postData);
         const postElement = document.createElement('div');
         postElement.classList.add('menu-card');
