@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 8 ProductArray</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+ <!-- Feather -->
+ <script src="https://unpkg.com/feather-icons"></script>
+
+ <!-- My Style -->
+  <link rel="stylesheet" href="login.css">
+
+
+</head>
+<body>
+
+  <!-- Navbar Start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Website<span>Restourant</span>.</a>
+
+    
+    <div class="navbar-extra">
+      <a href="#" id="search"> <i data-feather="search"></i></a>
+      <a href="../index.html" id="shopping-cart"> <i data-feather="shopping-cart"></i></a>
+      <a href="#" id="hamburger-menu"> <i data-feather="menu"></i></a>
+    </div>
+
+  </nav>
+  <!-- Navbar End -->
+  <!-- Hero Section Start -->
+  <section class="hero">
+    <div class="container">
+      <label for="fname">Nama:</label><br>
+      <input type="text" id="fname" placeholder="masukan nama" ><br>
+      <label for="lname">Email:</label><br>
+      <input type="text" id="Email" placeholder="masukan email" ><br><br>
+      <label for="lname">No HP:</label><br>
+      <input type="text" id="Nohp" placeholder="masukan no hp aktif" ><br><br>
+      <label for="lname">Jenis Kelamin:</label><br>
+      <input type="radio" name="rdlok"value="1">Laki laki <br> 
+      <input type="radio" name="rdlok"value="1">Perempuan <br>  
+      <br>
+      <label for="prodi">prodi</label>
+      <br>
+        <select id="prodi" name="prodi">
+          <option value="Sistem Informasi">Sistem Informasi</option>
+          <option value="Teknologi informasi">Teknologi informasi</option>
+          <option value="Software Enginering">Software Enginering</option>
+        </select>
+              <br>
+      <br>
+      <label for="hobi">Hobi</label><br>
+      <input type="text" id="Hobi" placeholder="Hobi"><br><br>
+
+      <label for="Alamat">Alamat</label><br>
+      <!-- <input type="text" id="Alamat" placeholder="Alamat"><br><br> -->
+      <textarea id="description" name="description" rows="5" cols="50">
+        </textarea>
+
+      <form action="/upload" method="post" enctype="multipart/form-data">
+      <br>
+      <br><label for="file">Choose a file:</label><br>
+        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .gif">
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </form> 
+
+
+    </div>
+  </section>
+  <!-- Hero Section End -->
+
+  <!-- Menu Section Start -->
+  <!-- Menu Section End -->
+
+  <!-- <section id="menu" class="menu">
+    <h2><span>Menu</span>Kami</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, impedit.</p><br> -->
+     
+
+  <!-- Feather -->
+  <script>
+    feather.replace()
+  </script>
+
+  <script src="array.js"></script>
+  
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
