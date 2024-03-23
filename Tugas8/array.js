@@ -1,53 +1,53 @@
-const postData = [
+const cardData = [
     {
-        name:'Strawberry Juice',
+        name:'Strawberry Ice Cold',
         price:'IDR 15.000',
-        images: '111 (2).JPG'
+        images: '111 (2).jpg'
     },
     {
         name:'Breakfeast',
         price:'IDR 20.000',
-        images: '111 (3).JPG'
+        images: '111 (3).jpg'
     },
     {
         name:'Salad Vegetable',
         price:'IDR 20.000',
-        images: '111 (4).JPG'
+        images: '111 (4).jpg'
     },
     {
         name:'Ice Cold',
         price:'IDR 15.000',
-        images: '111 (5).JPG'
+        images: '111 (5).jpg'
     },
     {
         name:'Coffe',
         price:'IDR 10.000',
-        images:'caffe (2).JPG'
+        images:'caffe (2).jpg'
      
     },
     {
-        name:'Mie',
-        price:'IDR 20.000',
-        images:'mie.JPG'
+        name:'Mie Indomie',
+        price:'IDR 3000',
+        images:'mie.jpg'
     },
 
     {
-        name: 'Kopi',
+        name: 'Ngops',
         price: 'IDR 10.000',
-        images: 'kopi.JPG'
+        images: 'kopi.jpg'
 
     },
 
     {
         name:'Shrimp Fresh',
         price:'ID R30.000',
-        images: 'udng.JPG'
-    },
+        images: 'udng.jpg'
+    }, 
 ]
 
 const postContainer = document.querySelector('.container');
 const postMethods = () => {
-    postData.map((postData)=>{
+    cardData.map((postData)=>{
         console.log(postData);
         const postElement = document.createElement('div');
         postElement.classList.add('menu-card');
