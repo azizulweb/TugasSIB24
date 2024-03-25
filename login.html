@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 9 Login Responsive</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+ <!-- Feather -->
+ <script src="https://unpkg.com/feather-icons"></script>
+
+ <!-- My Style -->
+  <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+
+  <!-- Navbar Start -->
+<div class="wrapper">
+  <nav class="nav">
+    <div class="nav-logo">
+        <img src="../assets/logo3" alt="Logo">
+    </div>
+
+    <div class="nav-menu">
+      <ul>
+        <li href="index.html" class="link active">Home</li>
+        <li href="#" class="link">Blog</li>
+        <li href="#" class="link">Service</li>
+        <li href="#" class="link">About</li>
+      </ul>
+    </div>
+    <div class="nav-button">
+        <button class="btn white-bt" id="loginbtn">Sign In</button>
+        <button class="btn" id="registerbtn">Sign Up</button>
+    </div>
+    <div class="nav-menu-btn">
+      <a href="#" id="search"> <i data-feather="search"></i></a>
+      <a href="#" id="shopping-cart"> <i data-feather="shopping-cart"></i></a>
+      <a href="#" id="menu"> <i data-feather="menu"></i></a>
+    </div>
+  </nav>
+</div>
+<!--Form Login Start-->
+
+<!--Form Login End-->
+ <div class="wrapper">
+    <div class="form">
+      <div class="title">
+        Login User
+      </div>
+      <form action="" method="post" id="submit">
+        <div class="input-wrap">
+          <label for="input-text">
+            Email or Username
+          </label>
+          <div class="input-field">
+            <input type="text" class="input" id="input-text">
+          </div>
+        </div>
+        <div class="input-wrap">
+          <label for="input-text">
+            Password
+          </label>
+          <div class="input-field">
+            <input type="password" class="input" id="input-password">
+          </div>
+        </div>
+
+        <div class="input-wrap">
+            <span class="error-msg">
+              Username atau Password salah, mohon ulangi lagi.
+            </span>
+            <input type="submit" value="login" class="button" id="login-button" >
+        </div>
+
+        
+      </form>
+    </div>
+ </div>
+   
+
+  <!-- Feather Foot -->
+  <script>
+    feather.replace()
+  </script>
+  <script src="login.js" type="text/javascript"></script>
+</body>
+</html>

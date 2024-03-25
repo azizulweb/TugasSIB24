@@ -4,7 +4,6 @@ body{
 }
 
 header {
-  /* padding: 10px; */
   text-align: center;
   position: relative;
 }
@@ -34,38 +33,52 @@ h1 {
   width: 110px;
   height: auto;  
   border-radius: 40%;
-  margin-left: 50% ;
+  margin-left: 50px ;
   /* margin-right: 50%; */
 }
 
-.nav-links {
-  list-style: none;
-  margin-left: 100%;
-  padding: 10px;
-  display: flex;
+.nav-links, .btn {
+  width: 100px;
+  height: 40px;
+  color: #0c0c0c;
+  font-size: medium;
+  font-family: sans-serif;
+  margin-bottom: 19px;
+  margin-left: 600px;
+  /* margin-right: 10px; */
+  font-weight: 400;
+  background: rgba(243, 237, 237, 0.712);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .3s ease;
 }
 
-.nav-links li {
-  margin-left: 1000px; /* Adjust margin to accommodate sidebar */
-  padding: 20px;
+.btn :last-child{
+  margin-right: 0;
 }
 
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px; /* Menambahkan padding untuk memberi tampilan tombol */
-  border-radius: 7px; /* Menggunakan border-radius untuk memberi tampilan sudut yang melengkung */
-  background-color: rgb(82, 79, 77); /* Warna latar belakang */
-  transition: background-color 0.3s; /* Efek transisi saat hover */
+#registerbtn {
+  margin-left: 50px;
+  color: #f1e3e3;
+
 }
 
-.nav-links li a:hover {
-  background-color: rgba(127, 193, 247, 0.918); /* Warna saat dihover */
+
+.btn:hover{
+  background: rgba(7, 5, 5, 0.966);
 }
 
+.btn.white-btn{
+  background: rgba(73, 65, 65, 0.7);
+}
+
+.btn.btn.white-btn:hover{
+  display: none;
+}
 
 .carousel {
-    width: 1180px;
+    width: 900px;
     height: 500px;
     overflow: hidden;
     position: relative;
@@ -104,37 +117,28 @@ h1 {
     right: 10px;
   }
 
-  @keyframes fade {
-    form{opacity: 0.3} 
-    to {opacity: 1}
+/* Media Queries */
+
+/* Laptop */
+@media(max-width: 1366px) {
+  html {
+      font-size: 75%;
+  }
+  
+  
+}
+
+/* Tablet */
+@media(max-width: 750px ) {
+  html {
+      font-size: 62.5%;
   }
 
-  @media (max-width: 768px){
-    .navbar{
-        font-size: 18px;
-        padding: 13px;
-    }
+}
+
+/* Mobile Phone */
+@media(max-width: 450px) {
+  html {
+      font-size: 55%;
   }
-
-  @media (max-width: 768px){
-    .carousel-next .carousel-prev{
-        font-size: 15px;
-        padding: 10px;
-
-    }
-  }
-
- @media (max-width: 576px){
-    .carousel-next .carousel-prev{
-      font-size: 12px;
-      padding: 7px;  
-
-    }
- }
-
- @media (max-width: 360px){
-    .carousel-next .carousel-prev{
-        font-size: 11px;
-        padding: 6px;    
-    }
- }
+}

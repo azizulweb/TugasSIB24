@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tugas6 Form</title>
     <link rel="stylesheet" href="styleform.css">
 
 </head>
@@ -21,33 +21,30 @@
         <label for="lname">Jenis Kelamin:</label><br>
         <input type="radio" name="rdlok"value="1">Laki laki <br> 
         <input type="radio" name="rdlok"value="1">Perempuan <br>
-        
-        <br>
-        <label for="prodi">prodi</label>
-        <br>
-          <select id="prodi" name="prodi">
-            <option value="Sistem Informasi">Sistem Informasi</option>
-            <option value="Teknologi informasi">Teknologi informasi</option>
-            <option value="Software Enginering">Software Enginering</option>
-          </select>
-                <br>
-        <br>
-        <label for="hobi">Hobi</label><br>
-        <input type="text" id="Hobi" placeholder="Hobi"><br><br>
-  
-        <label for="Alamat">Alamat</label><br>
-        <!-- <input type="text" id="Alamat" placeholder="Alamat"><br><br> -->
-        <textarea id="description" name="description" rows="5" cols="50">
-          </textarea>
+        <select id="prodi" name="prodi">
+          <option value="Sistem Informasi">Sistem Informasi</option>
+          <option value="Teknologi informasi">Teknologi informasi</option>
+          <option value="Software Enginering">Software Enginering</option>
+        </select>
+              <br>
+      <br>
+      <label for="hobi">Hobi</label><br>
+      <input type="text" id="Hobi" placeholder="Hobi"><br><br>
 
-        <form action="/upload" method="post" enctype="multipart/form-data">
-        <br>
-        <br><label for="file">Choose a file:</label><br>
-          <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .gif">
-          <br><br>
-          <input type="submit" value="Submit">
-        </form>
-      </form> 
+      <label for="Alamat">Alamat</label><br>
+      <!-- <input type="text" id="Alamat" placeholder="Alamat"><br><br> -->
+      <textarea id="description" name="description" rows="5" cols="50">
+        </textarea>
+
+      <form action="/upload" method="post" enctype="multipart/form-data">
+      <br>
+      <br><label for="file">Choose a file:</label><br>
+        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .gif">
+        <br><br>
+        <input type="submit" value="Submit" >
+      </form>
+    </form> 
+
 
 
   </div> 

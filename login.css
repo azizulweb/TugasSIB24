@@ -1,0 +1,215 @@
+:root {
+    --primary: rgb(238, 159, 13);
+    --bg: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    background: url("/Tugas8/assets/caffe\ \(2\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: large;
+    color: #fff7f7;
+    /* min-height: 2000px; */
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 30vh;
+    min-height: 30vh;
+    background: rgba(39, 39, 39, 0.075);
+}
+
+/* Navbar Start */
+.nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39, 39, 0.6), transparent);
+    z-index: 100;
+}
+
+.nav-logo img {
+    width: 105px; /* Sesuaikan dengan lebar logo */
+    height: auto; 
+    border-radius: 80%;
+}
+
+.nav-menu ul{
+    display: flex;
+}
+
+.nav-menu ul li{
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff7f7;
+    padding-bottom: 15px;
+}
+
+.link :hover, .active{
+    border-bottom: 2px solid #fff7f7;
+}
+
+.nav-button .btn {
+    width: 100px;
+    height: 40px;
+    font-weight: 400px;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+ #registerbtn {
+    margin-left: 15px;
+
+ }
+
+ .btn.white-btn {
+    background: rgba(99, 89, 89, 0.7);
+
+ }
+
+ .btn:hover{
+    background: rgba(255, 255, 255, 0.966);
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.btn.white-btn{
+    background: rgba(41, 36, 36, 0.7);
+}
+
+.btn.btn.white-btn:hover{
+    display: none;
+}
+
+.nav-menu-btn{
+    display: none;
+}
+
+/* Navbar End */
+
+/* Form Login Start */
+.wrapper
+.form{
+    width: 500px;
+    height: auto;
+    background: #161515;
+    padding: 35px 50px;
+    font-size: 24px;   
+}
+
+.form .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.form .input-wrap {
+    margin-bottom: 20px;
+    width: 325px;
+    position: relative;
+}
+
+.form .input-wrap:last-child {
+    margin-bottom: 0;
+}
+
+.form .input-wrap label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.form,
+.input-wrap input{
+    padding: 15px;
+    width: 100%;
+    border: 1px solid transparent;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.form .input-wrap input {
+    background: #e3e3e3;
+    padding-right: 35px;
+}
+
+.form ,.input-wrap input:focus {
+    border-color: antiquewhite;
+}
+
+.form ,.input-wrap .input-field {
+    position: relative;
+}
+
+.form .input-wrap .error-msg {
+    font-size: medium;
+    margin-bottom: 5px;
+    color: rgb(238, 159, 13);
+    display: none;
+}
+
+.form .input-wrap .button{
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: 3px;
+   background: rgb(238, 159, 13);
+   cursor: pointer; 
+}
+
+/* Form Login End */
+
+
+/* Media Queries */
+
+/* Laptop */
+@media(max-width: 1200px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tablet */
+@media(max-width: 550px) {
+    html {
+        font-size: 60%;
+    }
+
+    #nav-logo {
+        display: inline-block;
+    }
+}
+
+/* Mobile Phone */
+@media(max-width: 100px) {
+    html {
+        font-size: 10%;
+    }
+}
