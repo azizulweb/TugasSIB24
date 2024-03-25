@@ -5,7 +5,7 @@ function validate(){
     var password = document.getElementById("inputpassword").value;
     if ( username == "azizulf25@gmail.com" && password == "1234567"){
         alert ("Anda berhasil masuk, Selamat datang");
-        window.location = "http://127.0.0.1:5500/Tugas9/ProductApiRes.html";
+        window.location = "Tugas9/ProductApiRes.html";
         return false;
     } else{
         attempt --;
