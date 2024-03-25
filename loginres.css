@@ -15,7 +15,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
-    background: url("/Tugas8/assets/caffe\ \(1\).jpg");
+    background: url("../Tugas8/assets/caffe\ \(1\).jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
